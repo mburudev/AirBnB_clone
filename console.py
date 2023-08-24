@@ -32,7 +32,7 @@ class HBNBCommand(cmd.Cmd):
         '''
         args = args.split()
         if len(args) == 0:
-            print("** class doesn't exist **")
+            print("** class name missing **")
         elif args[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         else:
@@ -153,7 +153,7 @@ class HBNBCommand(cmd.Cmd):
                     key = args[0] + '.' + args[1]
                     return key
                 else:
-                    print("** class doesn't exist **")
+                    print("** class name missing **")
                     return None
 
     def do_quit(self, args):
