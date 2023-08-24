@@ -131,7 +131,7 @@ class HBNBCommand(cmd.Cmd):
     def check_class_name(self, name=""):
         """Check if stdin user typed class name and id."""
         if len(name) == 0:
-            print("** class name missing **")
+            print("** class doesn't exist **")
             return False
         else:
             return True
